@@ -1,7 +1,0 @@
-interface:
-  display_name: "Reddit Agent"
-  short_description: "Research and write for Reddit communities"
-  brand_color: "#FF4500"
-  default_prompt: "Use $reddit-agent to find and summarize public Reddit discussions about my topic."
-policy:
-  allow_implicit_invocation: true

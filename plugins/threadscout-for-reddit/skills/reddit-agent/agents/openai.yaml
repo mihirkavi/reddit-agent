@@ -1,0 +1,7 @@
+interface:
+  display_name: "ThreadScout for Reddit"
+  short_description: "Research Reddit and manage your account safely"
+  brand_color: "#FF4500"
+  default_prompt: "Use $reddit-agent to research Reddit or help with my connected account."
+policy:
+  allow_implicit_invocation: true

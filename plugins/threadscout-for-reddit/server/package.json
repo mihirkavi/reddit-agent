@@ -1,0 +1,13 @@
+{
+  "name": "threadscout-reddit-mcp",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free local Reddit OAuth MCP server for ThreadScout for Reddit",
+  "scripts": {
+    "test": "node --test test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

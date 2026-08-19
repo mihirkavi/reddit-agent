@@ -1,0 +1,42 @@
+{
+  "name": "threadscout-for-reddit",
+  "version": "0.2.0",
+  "description": "An unofficial Reddit agent for research and OAuth-authorized account actions with confirmation safeguards.",
+  "author": {
+    "name": "Mihir",
+    "url": "https://github.com/mihirkavi"
+  },
+  "repository": "https://github.com/mihirkavi/reddit-agent",
+  "homepage": "https://github.com/mihirkavi/reddit-agent",
+  "license": "MIT",
+  "keywords": [
+    "reddit",
+    "research",
+    "communities",
+    "social-listening",
+    "writing"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ThreadScout for Reddit",
+    "shortDescription": "Research Reddit and manage your account safely",
+    "longDescription": "An independent Reddit agent for public research and OAuth-authorized account workflows, including feeds, history, posts, comments, messages, subscriptions, and moderation. Public or destructive actions are previewed and confirmation-gated.",
+    "developerName": "Mihir",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Analysis",
+      "Writing",
+      "Account actions"
+    ],
+    "websiteURL": "https://github.com/mihirkavi/reddit-agent",
+    "privacyPolicyURL": "https://github.com/mihirkavi/reddit-agent/blob/main/PRIVACY.md",
+    "defaultPrompt": [
+      "Find recent Reddit discussions about this topic.",
+      "Summarize how Reddit communities view this issue.",
+      "Show my Reddit inbox and saved posts."
+    ],
+    "brandColor": "#FF4500"
+  }
+}
