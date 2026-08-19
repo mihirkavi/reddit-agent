@@ -1,0 +1,20 @@
+{
+  "name": "reddit-agent-marketplace",
+  "interface": {
+    "displayName": "Reddit Agent"
+  },
+  "plugins": [
+    {
+      "name": "reddit-agent",
+      "source": {
+        "source": "local",
+        "path": "./plugins/reddit-agent"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
