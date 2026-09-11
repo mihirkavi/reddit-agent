@@ -1,5 +1,7 @@
 # ThreadScout for Reddit
 
+<p><img src="assets/brand/logo.png" alt="ThreadScout logo" width="96" height="96"></p>
+
 ThreadScout for Reddit is an open Codex plugin for researching public Reddit discussions and, when connected through approved Reddit OAuth access, safely working with an authorized account.
 
 This is an independent, unofficial project. It is not affiliated with, endorsed by, or sponsored by Reddit, Inc.
@@ -112,3 +114,11 @@ Issues and focused pull requests are welcome. Please keep the core plugin usable
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+<!-- project-artwork:start -->
+## Project artwork
+
+![Conceptual artwork for ThreadScout](assets/brand/cover.png)
+
+Conceptual project artwork. [Asset files, design notes, and generation prompts](assets/brand/README.md).
+<!-- project-artwork:end -->
