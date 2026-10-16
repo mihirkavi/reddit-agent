@@ -71,13 +71,7 @@ Use $reddit-agent to show me a preview of a post for r/<community>, then wait fo
 Use $reddit-agent to review my moderation queue and suggest actions without taking them.
 ```
 
-For development, validate it first:
-
-```sh
-python3 scripts/check.py
-```
-
-Once installed, start with one of these prompts:
+Once installed, start with one of these public-research prompts:
 
 ```text
 Use $reddit-agent to find recent Reddit discussions about local-first software.
@@ -106,6 +100,31 @@ The account connector supports identity, feeds, search, saved/hidden/history lis
 Voting is intentionally not exposed because Reddit's current Responsible Builder Policy prohibits apps from manipulating voting or karma. Website-only capabilities such as chat-room automation, awards/purchases, account security changes, and media upload are not included. The connector does not provide arbitrary API pass-through or browser-based workarounds.
 
 Reddit discussions are anecdotal and subject to selection bias. They should not be treated as representative polling, professional advice, or verified fact without corroboration.
+
+## Repository layout
+
+```text
+.agents/plugins/marketplace.json          Codex marketplace catalog
+plugins/threadscout-for-reddit/
+├── .codex-plugin/plugin.json             Plugin manifest
+├── .mcp.json                             Local STDIO MCP registration (reddit-account)
+├── server/                               Dependency-free Node.js OAuth MCP connector
+│   ├── index.mjs                         JSON-RPC entry point
+│   ├── reddit-client.mjs                 OAuth flow, token storage, Reddit API client
+│   ├── tools.mjs                         Tool definitions and confirmation gates
+│   └── test.mjs                          Node test suite
+└── skills/reddit-agent/                  Skill instructions and research/writing/account references
+scripts/check.py                          Structural validation of manifests and skill files
+```
+
+## Development
+
+Validate the plugin structure and run the connector tests (Python 3 and Node.js 20+, no dependencies to install):
+
+```sh
+python3 scripts/check.py
+cd plugins/threadscout-for-reddit/server && npm test
+```
 
 ## Contributing
 
