@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ThreadScout banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=block" rel="stylesheet">
+<style>
+  /* ThreadScout identity: burnt orange + charcoal + warm cream, taken from assets/brand/logo.png */
+  :root {
+    --bg: #faf4ea; --paper: #fffdf8; --ink: #2a2d34; --muted: #6c675f; --line: #e7dccb;
+    --orange: #e65218; --orange-soft: #fbe3d6; --cream: #f5e9d5; --thread: #d9cbb6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1e23; --paper: #25282f; --ink: #f5e9d5; --muted: #b3aa9c; --line: #363a43;
+      --orange: #ff6a33; --orange-soft: #3a2a24; --cream: #f5e9d5; --thread: #4a4e58;
+    }
+    .brand img { background: var(--cream); border-radius: 12px; padding: 4px; }
+    h1 .mark::after { opacity: .5; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1600px; height: 600px; overflow: hidden; }
+  body {
+    background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", sans-serif;
+    display: grid; grid-template-columns: 820px 1fr; gap: 56px; padding: 0 96px 0 104px; align-items: center;
+    background-image: radial-gradient(var(--line) 1.2px, transparent 1.2px); background-size: 28px 28px;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; font: 700 26px "Bricolage Grotesque"; letter-spacing: -0.01em; }
+  .brand img { width: 46px; height: 46px; }
+  .eyebrow { margin-top: 34px; font: 500 15px "IBM Plex Mono"; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); }
+  h1 { margin-top: 14px; font: 800 86px/0.98 "Bricolage Grotesque"; font-variation-settings: "opsz" 96; letter-spacing: -0.035em; }
+  h1 .mark { position: relative; white-space: nowrap; }
+  h1 .mark::after { content: ""; position: absolute; left: -4px; right: -6px; bottom: 6px; height: 18px; background: var(--orange); opacity: .28; z-index: -1; border-radius: 3px; }
+  h1 sup { font: 600 26px "IBM Plex Mono"; color: var(--orange); vertical-align: 46px; margin-left: 4px; letter-spacing: 0; }
+  .sub { margin-top: 26px; font-size: 24px; line-height: 1.45; color: var(--muted); max-width: 700px; }
+
+  /* Signature motif: a nested comment thread where every claim carries a citation */
+  .thread { background: var(--paper); border: 1.5px solid var(--line); border-radius: 22px; padding: 28px 30px 24px; box-shadow: 0 24px 60px rgba(42,45,52,.10); }
+  .row { display: flex; gap: 14px; align-items: flex-start; position: relative; }
+  .row + .row { margin-top: 16px; }
+  .l1 { margin-left: 34px; } .l2 { margin-left: 68px; }
+  .row.l1::before, .row.l2::before { content: ""; position: absolute; left: -20px; top: -16px; width: 14px; height: 34px; border-left: 2px solid var(--thread); border-bottom: 2px solid var(--thread); border-bottom-left-radius: 10px; }
+  .dot { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--cream); border: 2px solid var(--thread); }
+  .dot.hot { background: var(--orange); border-color: var(--orange); }
+  .lines { flex: 1; padding-top: 3px; }
+  .bar { height: 10px; border-radius: 6px; background: var(--line); }
+  .bar + .bar { margin-top: 8px; }
+  .cite { flex: none; font: 600 15px "IBM Plex Mono"; color: var(--orange); background: var(--orange-soft); border-radius: 7px; padding: 3px 8px; }
+  .sources { margin-top: 22px; padding-top: 16px; border-top: 1.5px dashed var(--line); font: 400 15px/1.75 "IBM Plex Mono"; color: var(--muted); }
+  .sources b { color: var(--orange); font-weight: 600; }
+  .gate { margin-top: 16px; display: inline-flex; align-items: center; gap: 10px; font: 500 15px "IBM Plex Mono"; color: var(--ink); border: 1.5px solid var(--ink); border-radius: 999px; padding: 7px 14px; }
+  .gate i { width: 9px; height: 9px; border-radius: 50%; background: var(--orange); display: block; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="brand"><img src="../../../assets/brand/logo.png" alt="">ThreadScout <span style="font-weight:500;opacity:.6">for Reddit</span></div>
+    <div class="eyebrow">Unofficial · Open source · Codex plugin</div>
+    <h1>Hear what Reddit thinks, with <span class="mark">receipts.</span><sup>[1]</sup></h1>
+    <p class="sub">Research public threads with real permalinks. Connect your own account, and every post waits for your yes.</p>
+  </div>
+  <div class="thread" aria-hidden="true">
+    <div class="row"><span class="dot hot"></span><div class="lines"><div class="bar" style="width:92%"></div><div class="bar" style="width:64%"></div></div><span class="cite">[1]</span></div>
+    <div class="row l1"><span class="dot"></span><div class="lines"><div class="bar" style="width:84%"></div><div class="bar" style="width:46%"></div></div><span class="cite">[2]</span></div>
+    <div class="row l2"><span class="dot"></span><div class="lines"><div class="bar" style="width:70%"></div></div><span class="cite">[3]</span></div>
+    <div class="row l1"><span class="dot"></span><div class="lines"><div class="bar" style="width:78%"></div><div class="bar" style="width:58%"></div></div><span class="cite">[4]</span></div>
+    <div class="sources">
+      <div><b>[1]</b> reddit.com/r/…/comments/…</div>
+      <div><b>[2]</b> permalink · subreddit · age</div>
+      <div><b>[3]</b> sample size and skew noted</div>
+    </div>
+    <div class="gate"><i></i>dry_run: true · waiting for your yes</div>
+  </div>
+</body>
+</html>
