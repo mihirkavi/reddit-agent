@@ -19,10 +19,10 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-111111?style=flat-square"></a>
-  <img alt="Codex plugin with a local MCP server" src="https://img.shields.io/badge/Codex%20plugin%20%C2%B7%20MCP-111111?style=flat-square">
-  <img alt="Node.js 20 or newer, no dependencies" src="https://img.shields.io/badge/Node%2020%2B%20%C2%B7%20zero%20deps-111111?style=flat-square">
-  <img alt="Status: early, unofficial" src="https://img.shields.io/badge/status-early%20%C2%B7%20unofficial-6b6b6b?style=flat-square">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2A2D34?style=flat-square"></a>
+  <img alt="Codex plugin with a local MCP server" src="https://img.shields.io/badge/Codex%20plugin%20%C2%B7%20MCP-2A2D34?style=flat-square">
+  <img alt="Node.js 20 or newer, no dependencies" src="https://img.shields.io/badge/Node%2020%2B%20%C2%B7%20zero%20deps-2A2D34?style=flat-square">
+  <img alt="Status: early, unofficial" src="https://img.shields.io/badge/status-early%20%C2%B7%20unofficial-E65218?style=flat-square">
 </p>
 
 <p align="center">
@@ -42,15 +42,15 @@ Reddit is where people say what they actually think about products, tools and pr
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3>🔗 Sources, not vibes</h3>
+      <h3>Sources, not vibes</h3>
       Answers point to original Reddit permalinks with subreddit and age. No invented quotes, votes or percentages.
     </td>
     <td width="33%" valign="top">
-      <h3>✋ Preview before posting</h3>
+      <h3>Preview before posting</h3>
       Posts, comments, messages, edits, deletes and moderation return a dry run first. They run only with <code>confirmation=confirmed</code>.
     </td>
     <td width="33%" valign="top">
-      <h3>🔐 Your keys stay home</h3>
+      <h3>Your keys stay home</h3>
       You sign in on Reddit itself. The refresh token stays on your machine (macOS Keychain). No voting tool, ever.
     </td>
   </tr>
@@ -89,14 +89,14 @@ python3 scripts/check.py
 
 ## What it can do
 
-| | Capability | Needs | Status |
-| --- | --- | --- | --- |
-| 🔎 | **Research and synthesis** of public threads, with permalinks and sampling caveats | Nothing | ✅ Skill |
-| ✍️ | **Drafting** posts, titles, comments and mod messages (drafting never publishes) | Nothing | ✅ Skill |
-| 👤 | **Read your account**: identity, feeds, search, saved, hidden, history, subscriptions, inbox | Approved Reddit OAuth app | ✅ 8 read tools |
-| 📝 | **Act on your account**: post, comment, edit, delete, save, subscribe, message, report | Approved Reddit OAuth app | ✅ Preview + confirm |
-| 🛡️ | **Moderate** where your account has permission | Approved app + mod rights | ✅ Preview + confirm |
-| 🗳️ | **Voting or karma actions** | — | 🚫 Never (Reddit policy) |
+| Capability | Needs | Status |
+| --- | --- | --- |
+| **Research and synthesis** of public threads, with permalinks and sampling caveats | Nothing | Skill |
+| **Drafting** posts, titles, comments and mod messages (drafting never publishes) | Nothing | Skill |
+| **Read your account**: identity, feeds, search, saved, hidden, history, subscriptions, inbox | Approved Reddit OAuth app | 8 read tools |
+| **Act on your account**: post, comment, edit, delete, save, subscribe, message, report | Approved Reddit OAuth app | Preview + confirm |
+| **Moderate** where your account has permission | Approved app + mod rights | Preview + confirm |
+| **Voting or karma actions** | — | Never (Reddit policy) |
 
 <details>
 <summary><strong>All 18 MCP tools</strong></summary>
